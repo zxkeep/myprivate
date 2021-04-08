@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <!--<commentGenerator>-->
+        <!--<property name="suppressAllComments" value="true"/>-->
+        <!--</commentGenerator>-->
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="tk.mybatis.mapper.common.Mapper,tk.mybatis.mapper.common.MySqlMapper"/>
+            <!-- caseSensitive默认false，当数据库表名区分大小写时，可以将该属性设置为true -->
+            <property name="caseSensitive" value="true"/>
+        </plugin>
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://47.110.231.142:3306/xinglin?generateSimpleParameterMetadata=true"
+                        userId="xinglin"
+                        password="123456">
+        </jdbcConnection>
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="com.keepzx.domain.entity" targetProject="src/main/java"/>
+        <sqlMapGenerator targetPackage="com.keepzx.mapper.base" targetProject="src/main/resources"/>
+        <javaClientGenerator targetPackage="com.keepzx.mapper.base" targetProject="src/main/java" type="XMLMAPPER"/>
+
+      <table tableName="xl_operate_member" domainObjectName="OperateMember">
+            <generatedKey column="OMR_ID" sqlStatement="MySql" type="post" identity="true"/>
+            <columnOverride column="OMR_ID" property="id"/>
+        </table>
+    </context>
+</generatorConfiguration>

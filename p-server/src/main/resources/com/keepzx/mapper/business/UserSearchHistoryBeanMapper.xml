@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.scxinglin.mapper.business.UserSearchHistoryBeanMapper">
+    <select id="selectLatelySearchMecicineByUseIdAndMedId"
+            resultMap="com.scxinglin.mapper.base.YaoJingCaiTokenMapper.BaseResultMap" parameterType="com.scxinglin.domain.bean.UserSignInfo">
+        SELECT
+            usm.*
+        FROM
+            xl_user_search_medicine usm
+        LEFT JOIN xl_user_search_history ush ON ush.USH_ID = usm.USH_ID
+        AND ush.USE_ID = #{useId}
+        WHERE usm.MED_ID = #{medId}
+        ORDER BY usm.CREATE_DATETIME desc limit 1
+    </select>
+</mapper>
