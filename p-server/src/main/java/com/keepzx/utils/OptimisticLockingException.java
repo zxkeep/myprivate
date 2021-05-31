@@ -1,4 +1,4 @@
-package com.scxinglin.utils;
+package com.keepzx.utils;
 
 public class OptimisticLockingException extends RuntimeException{
     private static final String format = "受影响的行数不为%s: %s";

@@ -1,4 +1,4 @@
-package com.scxinglin.domain.bean;
+package com.keepzx.domain.bean;
 
 import lombok.Data;
 

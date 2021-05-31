@@ -1,4 +1,4 @@
-package com.scxinglin.utils;
+package com.keepzx.utils;
 
 import com.alibaba.fastjson.JSON;
 import org.slf4j.Logger;

@@ -16,9 +16,9 @@
             <property name="caseSensitive" value="true"/>
         </plugin>
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://47.110.231.142:3306/xinglin?generateSimpleParameterMetadata=true"
-                        userId="xinglin"
-                        password="123456">
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/xizang?generateSimpleParameterMetadata=true"
+                        userId="root"
+                        password="mysql">
         </jdbcConnection>
 
         <javaTypeResolver>
@@ -29,9 +29,9 @@
         <sqlMapGenerator targetPackage="com.keepzx.mapper.base" targetProject="src/main/resources"/>
         <javaClientGenerator targetPackage="com.keepzx.mapper.base" targetProject="src/main/java" type="XMLMAPPER"/>
 
-      <table tableName="xl_operate_member" domainObjectName="OperateMember">
-            <generatedKey column="OMR_ID" sqlStatement="MySql" type="post" identity="true"/>
-            <columnOverride column="OMR_ID" property="id"/>
+      <table tableName="xz_account" domainObjectName="Account">
+            <generatedKey column="ACC_ID" sqlStatement="MySql" type="post" identity="true"/>
+            <columnOverride column="ACC_ID" property="id"/>
         </table>
     </context>
 </generatorConfiguration>

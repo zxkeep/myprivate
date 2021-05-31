@@ -1,4 +1,4 @@
-package com.scxinglin.utils;
+package com.keepzx.utils;
 
 import net.sf.json.JSONObject;
 import org.codehaus.jackson.annotate.JsonAutoDetect;

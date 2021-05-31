@@ -1,4 +1,4 @@
-package com.scxinglin.utils;
+package com.keepzx.utils;
 
 public abstract class DoubleUtils {
 

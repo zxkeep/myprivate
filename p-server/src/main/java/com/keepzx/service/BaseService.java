@@ -1,4 +1,4 @@
-package com.scxinglin.service;
+package com.keepzx.service;
 
 import com.github.pagehelper.Page;
 

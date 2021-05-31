@@ -1,4 +1,4 @@
-package com.scxinglin.cache;
+package com.keepzx.cache;
 
 public interface BaseCache<T> {
 

@@ -1,4 +1,4 @@
-package com.scxinglin.utils;
+package com.keepzx.utils;
 
 import javax.imageio.ImageIO;
 import javax.servlet.ServletOutputStream;

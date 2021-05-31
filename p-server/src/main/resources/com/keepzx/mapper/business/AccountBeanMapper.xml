@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.keepzx.mapper.business.AccountBeanMapper">
+    <select id="selectLatelySearchMecicineByUseIdAndMedId" resultMap="com.keepzx.mapper.base.AccountMapper.BaseResultMap"
+            parameterType="com.keepzx.domain.entity.Account">
+        SELECT
+            *
+        FROM
+            xz_account usm
+        WHERE usm.ACC_ID = #{accId}
+        ORDER BY usm.CREATE_DATETIME desc limit 1
+    </select>
+</mapper>

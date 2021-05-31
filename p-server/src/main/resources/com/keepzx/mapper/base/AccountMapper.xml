@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.keepzx.mapper.base.AccountMapper">
+  <resultMap id="BaseResultMap" type="com.keepzx.domain.entity.Account">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ACC_ID" jdbcType="INTEGER" property="id" />
+    <result column="ACC_LOGIN_NAME" jdbcType="VARCHAR" property="accLoginName" />
+    <result column="ACC_PASSWORD" jdbcType="VARCHAR" property="accPassword" />
+    <result column="ACC_NAME" jdbcType="VARCHAR" property="accName" />
+    <result column="ACC_PHONE" jdbcType="VARCHAR" property="accPhone" />
+    <result column="DATA_DELETE" jdbcType="INTEGER" property="dataDelete" />
+    <result column="CREATE_DATETIME" jdbcType="TIMESTAMP" property="createDatetime" />
+    <result column="UPDATE_DATETIME" jdbcType="TIMESTAMP" property="updateDatetime" />
+    <result column="CREATE_USER" jdbcType="INTEGER" property="createUser" />
+    <result column="UPDATE_USER" jdbcType="INTEGER" property="updateUser" />
+    <result column="ACC_IS_SUPER" jdbcType="INTEGER" property="accIsSuper" />
+  </resultMap>
+</mapper>

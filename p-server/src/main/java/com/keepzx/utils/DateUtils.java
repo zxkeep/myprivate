@@ -1,6 +1,6 @@
-package com.scxinglin.utils;
+package com.keepzx.utils;
 
-import com.scxinglin.constant.DateRange;
+import com.keepzx.constant.DateRange;
 import org.apache.commons.lang.time.FastDateFormat;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;

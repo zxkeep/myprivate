@@ -4,7 +4,7 @@ import com.alipay.api.domain.Account;
 import com.keepzx.pweb.common.BaseResultVO;
 import com.keepzx.pweb.common.constant.ResponseConstant;
 import com.keepzx.pweb.common.constant.SessionConstant;
-import com.scxinglin.utils.InterceptorReturn;
+import com.keepzx.utils.InterceptorReturn;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.log4j.Logger;
 import org.springframework.web.servlet.HandlerInterceptor;

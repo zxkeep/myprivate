@@ -1,9 +1,9 @@
-package com.scxinglin.service.impl;
+package com.keepzx.service.impl;
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.keepzx.config.db.DataSource;
-import com.scxinglin.service.BaseService;
+import com.keepzx.service.BaseService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;

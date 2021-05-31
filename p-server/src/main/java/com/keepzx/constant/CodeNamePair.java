@@ -1,4 +1,4 @@
-package com.scxinglin.constant;
+package com.keepzx.constant;
 
 import java.io.Serializable;
 

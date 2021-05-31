@@ -10,6 +10,7 @@
         <module>p-server</module>
         <module>p-config</module>
         <module>p-web</module>
+        <module>p-cms</module>
     </modules>
     <packaging>pom</packaging>
     <name>p-parent</name>
