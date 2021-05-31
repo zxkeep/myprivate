@@ -25,7 +25,7 @@
             <mvc:mapping path="/**"/>
             <mvc:exclude-mapping path="/login"/>
             <mvc:exclude-mapping path="/get-captcha"/>
-            <bean class="com.keepzx.pweb.interceptor.SessionInterceptor"/>
+            <bean class="com.keepzx.pcms.interceptor.SessionInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
     <!-- 配置数据库注解aop -->
