@@ -14,6 +14,7 @@ public interface UriConstant {
     String ACCOUNT_EDIT = "/account/edit";
     String ACCOUNT_DEL = "/account/del";
     String ACCOUNT_MODIFY_PASSWORD = "/account/modify/password";
+    String ACCOUNT_RESET_PASSWORD = "/account/reset/password";
 
     //角色管理
     String ROLE_ADD = "/role/add";
