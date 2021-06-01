@@ -37,11 +37,11 @@ public class AccountServiceImpl extends BaseServiceImpl<Account> implements Acco
     }
 
     @Override
-    public Page<AccountBean> getAccountRole(AccountBean accountBean) {
+    public Page<AccountBean> getAccounts(AccountBean accountBean) {
         Integer pageIndex = accountBean.getPageIndex();
         Integer pageSize = accountBean.getPageSize();
         Page<AccountBean> page = PageHelper.offsetPage((pageIndex-1)*pageSize,pageSize,true);
-//        accountBeanMapper.selectAccount(accountBean);
+        accountMapper.selectAll();
         return page;
     }
 

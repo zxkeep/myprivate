@@ -36,7 +36,7 @@ public class AccountController extends BaseController {
     @RequestMapping(value = UriConstant.ACCOUNT_LIST, method = RequestMethod.POST)
     public BaseResultVO<Page<AccountVO>> accountList(@RequestBody AccountVO accountVO) {
         AccountBean accountBean = AccountAssembler.vo2bean(accountVO);
-        com.github.pagehelper.Page<AccountBean> accountRole = accountService.getAccountRole(accountBean);
+        com.github.pagehelper.Page<AccountBean> accountRole = accountService.getAccounts(accountBean);
         Page<AccountVO> accountVOPage = AccountAssembler.page2vo(accountRole);
         return new BaseResultVO<>(accountVOPage);
     }

@@ -13,7 +13,7 @@ import java.util.List;
  */
 public interface AccountService extends BaseService<Account> {
 
-    Page<AccountBean> getAccountRole(AccountBean accountBean);
+    Page<AccountBean> getAccounts(AccountBean accountBean);
 
 
     void addAccount(AccountBean accountBean);
