@@ -14,4 +14,17 @@ CREATE TABLE `xz_account` (
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='账号信息表';
 
 -- --------------------------------------------------------------------------------------------------------
+CREATE TABLE `xz_material` (
+   `MAT_ID` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '素材ID',
+   `MAT_NAME` varchar(100) NOT NULL COMMENT '素材名称',
+   `MAT_SUFFIX` varchar(10) NOT NULL COMMENT '素材后缀',
+   `MAT_PATH` varchar(100) NOT NULL COMMENT '素材路径',
+   `MAT_CHECKSUM` varchar(32) NOT NULL COMMENT '素材MD5校验和',
+   `MAT_LEN` bigint(20) NOT NULL COMMENT '素材长度',
+   `MAT_DEL` smallint(6) NOT NULL COMMENT '是否删除 1.是 2.否',
+   `CREATE_DATETIME` datetime NOT NULL COMMENT '创建时间',
+   `CREATE_USER` int(11) NOT NULL COMMENT '创建员工',
+   `MAT_THM_PATH` varchar(100) DEFAULT NULL COMMENT '素材缩略图路径',
+   PRIMARY KEY (`MAT_ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='素材表';
 
